@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "category": "Stock Market",
+    "question": "What does the term 'bull market' mean in finance?",
+    "ground_truth": "A bull market refers to a financial market condition where prices are rising or expected to rise. It is typically characterized by a rise of 20% or more in stock prices from recent lows, widespread investor optimism, and strong economic fundamentals.",
+    "context": "Financial markets terminology"
+  },
+  {
+    "id": 2,
+    "category": "Economics",
+    "question": "What is the difference between GDP and GNP?",
+    "ground_truth": "GDP (Gross Domestic Product) measures the total value of goods and services produced within a country's borders, regardless of who produces them. GNP (Gross National Product) measures the total value of goods and services produced by a country's residents, regardless of where they are located. GDP focuses on location, while GNP focuses on nationality of producers.",
+    "context": "Macroeconomics fundamentals"
+  },
+  {
+    "id": 3,
+    "category": "Investment",
+    "question": "What is dollar-cost averaging?",
+    "ground_truth": "Dollar-cost averaging is an investment strategy where an investor divides the total amount to be invested across periodic purchases of a target asset, reducing the impact of volatility. By buying at regular intervals, investors purchase more shares when prices are low and fewer when prices are high, potentially lowering the average cost per share over time.",
+    "context": "Investment strategies"
+  },
+  {
+    "id": 4,
+    "category": "Banking",
+    "question": "What is the difference between a debit card and a credit card?",
+    "ground_truth": "A debit card draws funds directly from the user's bank account at the time of purchase. A credit card allows the user to borrow funds from the card issuer up to a set credit limit, with the expectation that the borrowed amount will be repaid later, often with interest if not paid in full each billing cycle.",
+    "context": "Personal finance basics"
+  },
+  {
+    "id": 5,
+    "category": "Taxation",
+    "question": "What is a progressive tax system?",
+    "ground_truth": "A progressive tax system is one in which the tax rate increases as the taxable income increases. Higher earners pay a larger percentage of their income in taxes. Most modern income tax systems in developed countries, including the United States, use a progressive tax structure with multiple income brackets.",
+    "context": "Taxation and fiscal policy"
+  },
+  {
+    "id": 6,
+    "category": "Investment",
+    "question": "What is an index fund?",
+    "ground_truth": "An index fund is a type of mutual fund or exchange-traded fund (ETF) designed to follow certain preset rules so that the fund can track a specified basket of underlying investments, such as the S&P 500. Index funds offer broad market exposure, low operating expenses, and low portfolio turnover, making them popular passive investment vehicles.",
+    "context": "Investment vehicles"
+  },
+  {
+    "id": 7,
+    "category": "Risk Management",
+    "question": "What is diversification in investing?",
+    "ground_truth": "Diversification is a risk management strategy that involves spreading investments across various financial instruments, industries, and other categories to reduce exposure to any single asset or risk. The rationale is that a portfolio of different kinds of investments will, on average, yield higher long-term returns and lower the risk of any individual holding.",
+    "context": "Portfolio management"
+  },
+  {
+    "id": 8,
+    "category": "Financial Metrics",
+    "question": "What is the Price-to-Earnings (P/E) ratio?",
+    "ground_truth": "The Price-to-Earnings (P/E) ratio is a valuation metric that compares a company's current share price to its earnings per share (EPS). It is calculated by dividing the market value per share by the earnings per share. The P/E ratio helps investors determine the relative value of a company's shares and whether a stock is overvalued or undervalued compared to others.",
+    "context": "Stock valuation metrics"
+  },
+  {
+    "id": 9,
+    "category": "Monetary Policy",
+    "question": "What is quantitative easing (QE)?",
+    "ground_truth": "Quantitative easing (QE) is an unconventional monetary policy tool used by central banks to stimulate the economy when standard monetary policy becomes ineffective. In QE, the central bank purchases longer-term securities from the open market to increase the money supply and encourage lending and investment by injecting liquidity directly into the financial system.",
+    "context": "Central banking and monetary policy"
+  },
+  {
+    "id": 10,
+    "category": "Corporate Finance",
+    "question": "What is EBITDA?",
+    "ground_truth": "EBITDA stands for Earnings Before Interest, Taxes, Depreciation, and Amortization. It is a measure of a company's overall financial performance and is used as an alternative to net income in some circumstances. EBITDA removes the effects of financing and accounting decisions, allowing investors to evaluate a company's operational efficiency more clearly.",
+    "context": "Financial statements and metrics"
+  },
+  {
+    "id": 11,
+    "category": "Insurance",
+    "question": "What is the difference between term life insurance and whole life insurance?",
+    "ground_truth": "Term life insurance provides coverage for a specified period (term), such as 10, 20, or 30 years, and pays a death benefit only if the insured dies within that term. Whole life insurance is a permanent policy that provides lifetime coverage, includes a savings component (cash value) that grows over time, and is significantly more expensive than term insurance.",
+    "context": "Insurance products"
+  },
+  {
+    "id": 12,
+    "category": "Cryptocurrency",
+    "question": "What is blockchain technology?",
+    "ground_truth": "Blockchain is a distributed ledger technology that records transactions across many computers in a way that ensures the records cannot be altered retroactively. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, forming a chain. It enables secure, transparent, and decentralized record-keeping without the need for a central authority.",
+    "context": "Digital finance and cryptocurrency"
+  },
+  {
+    "id": 13,
+    "category": "Economics",
+    "question": "What causes inflation?",
+    "ground_truth": "Inflation is caused by multiple factors including demand-pull inflation (when demand exceeds supply), cost-push inflation (when production costs rise), and built-in inflation (wage-price spiral). Other causes include expansion of the money supply, supply chain disruptions, and inflationary expectations. Central banks typically combat inflation by raising interest rates.",
+    "context": "Macroeconomics and monetary theory"
+  },
+  {
+    "id": 14,
+    "category": "Personal Finance",
+    "question": "What is compound interest?",
+    "ground_truth": "Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest, which is calculated only on the principal, compound interest causes wealth to grow exponentially over time. The formula is A = P(1 + r/n)^(nt), where P is principal, r is annual interest rate, n is compounding frequency, and t is time in years.",
+    "context": "Personal finance and savings"
+  },
+  {
+    "id": 15,
+    "category": "Stock Market",
+    "question": "What is market capitalization?",
+    "ground_truth": "Market capitalization (market cap) is the total market value of a company's outstanding shares of stock. It is calculated by multiplying the current share price by the total number of outstanding shares. Market cap is used to categorize companies as large-cap (over $10 billion), mid-cap ($2–10 billion), and small-cap (under $2 billion), and helps investors assess a company's size and investment risk profile.",
+    "context": "Stock market fundamentals"
+  }
+]
