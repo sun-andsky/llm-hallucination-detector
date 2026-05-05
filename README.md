@@ -15,57 +15,35 @@ It evaluates 3 prompt strategies (Zero-Shot, Few-Shot, Chain-of-Thought) on a 15
 
 ---
 
-## 🏗 Project Structure
 
-```
-hallucination_detector/
-│
-├── app.py                          # Main Streamlit application
-│
-├── data/
-│   └── finance_qa.json             # 15 finance Q&A pairs with ground truth
-│
-├── models/
-│   ├── __init__.py
-│   └── llm_clients.py              # Gemini & Groq API clients + prompt templates
-│
-├── utils/
-│   ├── __init__.py
-│   ├── hallucination_detector.py   # Scoring: BLEU, keyword overlap, Jaccard
-│   └── visualizations.py          # Plotly charts for the dashboard
-│
-├── requirements.txt
-└── README.md
-```
+## 📊 Dataset
+
+15 finance questions across 8 categories:
+
+- Stock Market · Economics · Investment · Banking
+- Taxation · Financial Metrics · Monetary Policy
+- Corporate Finance · Insurance · Cryptocurrency
+- Personal Finance · Risk Management
 
 ---
 
-## ⚙️ Setup Instructions
+## 📈 Features
 
-### 1. Clone / Download the project
-```bash
-cd hallucination_detector
-```
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Get API Keys
-
-| Service | URL |
-|---------|-----|
-| Google Gemini | https://aistudio.google.com/app/apikey |
-| Groq | https://console.groq.com/keys |
-
-### 4. Run the app
-```bash
-streamlit run app.py
-```
+- **Single Query Mode** — Test one question at a time, see side-by-side model answers
+- **Batch Evaluation** — Run all questions × all prompt styles automatically
+- **Analytics Dashboard** — Bar charts, radar charts, pie charts, heatmaps
+- **Auto Insights** — Best/worst performing model and prompt automatically identified
+- **CSV Export** — Download all batch results
+- **Dataset Browser** — Browse and filter all Q&A pairs
 
 ---
-
+## Interface
+![Screenshot](Screenshorts/1.png)
+![Screenshot](Screenshorts/2.png)
+![Screenshot](Screenshorts/3.png)
+![Screenshot](Screenshorts/4.png)
+![Screenshot](Screenshorts/5.png)
+![Screenshot](Screenshorts/6.png)
 ## 🔬 Detection Methodology
 
 Each LLM-generated answer is compared to a ground truth answer using three complementary lexical similarity metrics:
@@ -109,28 +87,6 @@ Guides the model to think step-by-step:
 
 ---
 
-## 📊 Dataset
-
-15 finance questions across 8 categories:
-
-- Stock Market · Economics · Investment · Banking
-- Taxation · Financial Metrics · Monetary Policy
-- Corporate Finance · Insurance · Cryptocurrency
-- Personal Finance · Risk Management
-
----
-
-## 📈 Features
-
-- **Single Query Mode** — Test one question at a time, see side-by-side model answers
-- **Batch Evaluation** — Run all questions × all prompt styles automatically
-- **Analytics Dashboard** — Bar charts, radar charts, pie charts, heatmaps
-- **Auto Insights** — Best/worst performing model and prompt automatically identified
-- **CSV Export** — Download all batch results
-- **Dataset Browser** — Browse and filter all Q&A pairs
-
----
-
 ## ⚠️ Limitations
 
 - Lexical metrics may under-score semantically equivalent paraphrases
@@ -138,6 +94,52 @@ Guides the model to think step-by-step:
 - Response times include network round-trip latency
 
 ---
+
+## 🏗 Project Structure
+
+```
+hallucination_detector/
+│
+├── app.py                          # Main Streamlit application
+│
+├── data/
+│   └── finance_qa.json             # 15 finance Q&A pairs with ground truth
+│
+├── models/
+│   ├── __init__.py
+│   └── llm_clients.py              # Gemini & Groq API clients + prompt templates
+│
+├── utils/
+│   ├── __init__.py
+│   ├── hallucination_detector.py   # Scoring: BLEU, keyword overlap, Jaccard
+│   └── visualizations.py          # Plotly charts for the dashboard
+│
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone / Download the project
+```bash
+cd hallucination_detector
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Get API Keys
+### 4. Run the app
+```bash
+streamlit run app.py
+```
+
+---
+
 
 ## 🛠 Tech Stack
 
